@@ -4,8 +4,8 @@
 SELECT * FROM employee ORDER BY salary DESC LIMIT 2,1;
 
 # NTH HIGHEST SALARY
-
-
+SELECT salary FROM employee e1 where N-1 = (SELECT COUNT(DISTINCT SALARY) FROM employee e2 where e1.salary <e2.salary)
+  
 # FIND DUPLICATES
   
 
