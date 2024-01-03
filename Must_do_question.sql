@@ -40,7 +40,16 @@ SELECT salary FROM employee e1 where N-1 = (SELECT COUNT(DISTINCT SALARY) FROM e
 
 
 # REMOVE DUPLICATES
+DELETE E1
+FROM Employee E1 , Employee E2
+WHERE E1.email = E2.email
+AND E1.id > E2.id;
 
+DELETE E1
+FROM Employee E1 , Employee E2
+WHERE E1.email = E2.email
+AND E1.name = E2.name
+AND E1.id > E2.id;
   
 
 # TOP 3 RECORDS
@@ -54,3 +63,8 @@ SELECT * FROM temp ORDER BY empid ASC;
 
 # RETRIVE DETAILS OF EMPLOYEE LASTNAME CONTAINS 5 LETTERS ENDING WITH A 
 SELECT * FROM Employee WHERE lastname LIKE '_____A';
+
+
+# RETRIVE FIRST 4 CHARACTER FROM employee name from Table
+SELECT SUBSTRING(name , 1, 4) FROM Employee;
+
