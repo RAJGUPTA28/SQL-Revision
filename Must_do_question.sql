@@ -1,5 +1,7 @@
 
 # MUST DO PROBLEMS
+
+
 # THIRD HIGHEST SALARY
 SELECT * FROM employee ORDER BY salary DESC LIMIT 2,1;
 
@@ -20,6 +22,15 @@ SELECT salary FROM employee e1 where N-1 = (SELECT COUNT(DISTINCT SALARY) FROM e
   SELECT * FROM Employee WHERE empid = (SELECT MIN(empid) from Employee);
 
   SELECT * FROM Employee WHERE empid = (SELECT MAX(empid) from Employee);
+
+# COPY ALL ROWS OF TABLE TO ANOTHER TABLE
+
+  CREATE TABLE Allemployee AS SELECT * from Employee;
+
+  CREATE TABLE Detemployee AS SELECT * from Employee WHERE 3=4;
+
+# RETRIVE LIST OF EMPLOYEES WORKING IN SAME DEPARTMENT
+  
 
 # REMOVE DUPLICATES
 
