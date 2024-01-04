@@ -11,4 +11,10 @@ FROM Student
 LEFT JOIN StudentCourse 
 ON StudentCourse.ROLL_NO = Student.ROLL_NO;
 
+
+
 # RIGHT JOIN
+SELECT Student.NAME,StudentCourse.COURSE_ID 
+FROM Student
+RIGHT JOIN StudentCourse 
+ON StudentCourse.ROLL_NO = Student.ROLL_NO;
