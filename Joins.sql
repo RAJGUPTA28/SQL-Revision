@@ -21,3 +21,8 @@ ON StudentCourse.ROLL_NO = Student.ROLL_NO;
 
 
 
+# FULL JOIN
+SELECT Student.NAME,StudentCourse.COURSE_ID 
+FROM Student
+FULL JOIN StudentCourse 
+ON StudentCourse.ROLL_NO = Student.ROLL_NO;
